@@ -1,5 +1,6 @@
 <div class="jumbotron">
-  <h1><i class="fa fa-circle-o-notch"></i> Stuk-Do</h1>
+  <h1> <%= link_to "<i class='fa fa-circle-o-notch'></i>My-To-Do".html_safe %></h1>
+
   <p>The First app by using Rails</p>
-  <%= link_to "Sign up","#", class: "btn btn-primary btn-lg" %>
+  <%= link_to "Sign up",new_user_registration_path, class: "btn btn-primary btn-lg" %>
 </div>
