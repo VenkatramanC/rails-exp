@@ -7,10 +7,10 @@ class TasksController < ApplicationController
   # GET /tasks.json
 
   def index
-    @to_do = current_user.tasks.where(state: "to_do")
+    @to_do = current_user.tasks.where(state: "to_do") 
     @doing = current_user.tasks.where(state: "doing")
-    @done = current_user.tasks.where(state: "done")
-    respond_with(@tasks)
+    @done  = current_user.tasks.where(state: "done")
+    #respond_with(@tasks)
   end
 
   # GET /tasks/1
